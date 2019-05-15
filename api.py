@@ -31,11 +31,11 @@ def classifier():
     ynew = model.predict(Xnew)
     if ynew[0] >= ynew[1]:
         d = {}
-        d['variant'] = "0"
+        d['variant'] = "1"
         return json.dumps(d)
     else:
         d= {}
-        d['variant'] = "1"
+        d['variant'] = "2"
         return json.dumps(d)
 
 if __name__ == '__main__':
